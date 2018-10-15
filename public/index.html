@@ -4,14 +4,354 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>ico-demo</title>
+    <meta name="description" content="Let us help you develop your own blockchain-token, ICO and blockchain ERC20, ERC721 token on the Ethereum blockchain">
+    <meta name="keywords" content="blockchain tokens, ERC20, ERC721, Ethereum SmartContracts, blockchain technology, decentralised applications, DAPPS, ICO">
+    <meta property="og:title" content="ICOs ← Tati Blockchain">
+    <meta property="og:site_name" content="Tati Blockchain">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ico.tatiblockchain.co.za">
+    <meta property="og:image" content="https://ico.tatiblockchain.co.za/img/tati-image.jpg">
+    <meta property="og:email" content="info@tatiblockchain.co.za">
+    <meta property="og:description" content="Let us help you develop your own blockchain-token, ICO and blockchain ERC20, ERC721 token on the Ethereum blockchain">
+    <meta name="twitter:card" content="ICO Demo - build your own">
+    <meta name="twitter:title" content="ICO demo ← Tati Blockchain">
+    <meta name="twitter:description" content="Let us help you develop your own blockchain-token, ICO and blockchain ERC20, ERC721 token on the Ethereum blockchain">
+    <meta name="twitter:creator" content="@NakamotoZatosh">
+    <meta name="twitter:image" content="https://ico.tatiblockchain.co.za/img/tati-image.jpg">
+    <meta itemprop="name" content="ICO demo ← Tati Blockchain">
+    <meta itemprop="description" content="Let us help you develop your own blockchain-token, ICO and blockchain ERC20, ERC721 token on the Ethereum blockchain">
+    <meta itemprop="image" content="https://ico.tatiblockchain.co.za/img/tati-image.jpg">
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>ico-demo | tati blockchain</title>
+    <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
+      <!-- Navigation bar starts here -->
+      <div id="ico">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow dontmove">
+          <img class="img-fluid" src="./img/tati_block_solutions.png" width="250" height="50">
+          <h5 class="my-0 mr-md-auto font-weight-normal"> </h5>
+          <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="https://tatiblockchain.co.za">Home</a>
+            <a class="p-2 text-dark" href="https://block.tatiblockchain.co.za">Blockchain</a>
+            <a class="p-2 text-dark" href="https://tatiblockchain.co.za/smart-contracts">Smart Contracts</a>
+            <a class="p-2 text-dark" href="https://tatiblockchain.co.za/decentralised-applications">Applications</a>
+            <a class="p-2 text-dark" href="https://tatiblockchain.co.za/blockchain-tokens">Tokens</a>
+            <a class="p-2 text-dark" href="#">ICO demo</a>
+            <a class="p-2 text-dark" href="https://tatiblockchain.co.za/project-management">Project Management</a>
+          </nav>
+          <a class="btn btn-primary space" href="https://tatiblockchain.co.za/academy">Blockchain Academy</a>
+          <a class="btn btn-outline-primary" href="https://tatiblockchain.co.za/blogs">Blockchain Blogs</a>
+      </div>
+      </div>
+    <!-- Navigation bar ends here -->
     <noscript>
       <strong>We're sorry but ico-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+
+    <div id="ico" >
+
+      <div class="jumbotron jumbotron-fluid bg-secondary text-white">
+          <h1 class="display-4">What is TatiCoin(TTC)</h1>
+          <div class="container">
+            <p class="lead">TatiCoin (TTC) is a test ICO built on a test Ethereum Blockchain to
+             demonstrate how to build an ERC20, that can be used for ICO-purposes.</p>
+             <p class="lead">Althought acquired on this website, TatiCoin(TTC) can be transferred to any Rinkeby
+              Ether Address, traded at any exchange that lists the token. It has all the attributes of
+             a real Ethereum ERC20 token.</p>
+             <hr>
+            <p class="lead">ERC20 token are essentially a smart contract, they are Solidity code that is deployed
+             to the Ethereum Blockchain, and you interact with then as you would with any other smart contract.</p>
+          </div>
+          <br>
+          <br>
+          <!-- Start of second setion with the Solidity code and two column -->
+            <div class="container text-left">
+              <br>
+              <div class="linebox">
+                <p class="display-4">Below is the Solidity Smart Contract Adapted from the Ethereum Website that we just tested above.
+                It complies to all ERC20 specifications:</p>
+                 <ul>
+                   <li>The tokens are transferrable - from one account to another</li>
+                   <li>You can enquire if a certain address contains the tokens</li>
+                   <li>You can set allowances for other addresses to move tokens on your behalf</li>
+                   <li>You must emit certain events - such as transferring tokens</li>
+                   <li>Tokens have a name, symbol - making them identifiable on exchanges</li>
+                   <li>With our tokens - owners have the ability to burn their token in to thin air - reducing total supply</li>
+                   <li>The initial total supply is assigned to the person who deployed the contract</li>
+                 </ul>
+              </div>
+
+              <div class="raisedbox">
+                <pre>
+                  <code>
+                    pragma solidity ^0.4.21;
+
+                      interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
+
+                      contract TatiCoin {
+                          // Public variables of the token
+                          string public name;
+                          string public symbol;
+                          uint8 public decimals = 18;
+                          // 18 decimals is the strongly suggested default, avoid changing it
+                          uint256 public totalSupply;
+
+                          // This creates an array with all balances
+                          mapping (address => uint256) public balanceOf;
+                          mapping (address => mapping (address => uint256)) public allowance;
+
+                          // This generates a public event on the blockchain that will notify clients
+                          event Transfer(address indexed from, address indexed to, uint256 value);
+
+                          // This generates a public event on the blockchain that will notify clients
+                          event Approval(address indexed _owner, address indexed _spender, uint256 _value);
+
+                          // This notifies clients about the amount burnt
+                          event Burn(address indexed from, uint256 value);
+
+
+                          constructor (
+                              uint256 initialSupply,
+                              string tokenName,
+                              string tokenSymbol
+                          ) public {
+                              totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
+                              balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
+                              name = tokenName;                                   // Set the name for display purposes
+                              symbol = tokenSymbol;                               // Set the symbol for display purposes
+                          }
+
+                          /**
+                           * Internal transfer, only can be called by this contract
+                           */
+                          function _transfer(address _from, address _to, uint _value) internal {
+                              // Prevent transfer to 0x0 address. Use burn() instead
+                              require(_to != 0x0);
+                              // Check if the sender has enough
+                              require(balanceOf[_from] >= _value);
+                              // Check for overflows
+                              require(balanceOf[_to] + _value >= balanceOf[_to]);
+                              // Save this for an assertion in the future
+                              uint previousBalances = balanceOf[_from] + balanceOf[_to];
+                              // Subtract from the sender
+                              balanceOf[_from] -= _value;
+                              // Add the same to the recipient
+                              balanceOf[_to] += _value;
+                              emit Transfer(_from, _to, _value);
+                              // Asserts are used to use static analysis to find bugs in your code. They should never fail
+                              assert(balanceOf[_from] + balanceOf[_to] == previousBalances);
+                          }
+
+                          /**
+                           * Transfer tokens
+                           *
+                           * Send `_value` tokens to `_to` from your account
+                           *
+                           * @param _to The address of the recipient
+                           * @param _value the amount to send
+                           */
+                          function transfer(address _to, uint256 _value) public returns (bool success) {
+                              _transfer(msg.sender, _to, _value);
+                              return true;
+                          }
+
+                          /**
+                           * Transfer tokens from other address
+                           *
+                           * Send `_value` tokens to `_to` on behalf of `_from`
+                           *
+                           * @param _from The address of the sender
+                           * @param _to The address of the recipient
+                           * @param _value the amount to send
+                           */
+                          function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
+                              require(_value <= allowance[_from][msg.sender]);     // Check allowance
+                              allowance[_from][msg.sender] -= _value;
+                              _transfer(_from, _to, _value);
+                              return true;
+                          }
+
+                          /**
+                           * Set allowance for other address
+                           *
+                           * Allows `_spender` to spend no more than `_value` tokens on your behalf
+                           *
+                           * @param _spender The address authorized to spend
+                           * @param _value the max amount they can spend
+                           */
+                          function approve(address _spender, uint256 _value) public
+                              returns (bool success) {
+                              allowance[msg.sender][_spender] = _value;
+                              emit Approval(msg.sender, _spender, _value);
+                              return true;
+                          }
+
+                          /**
+                           * Set allowance for other address and notify
+                           *
+                           * Allows `_spender` to spend no more than `_value` tokens on your behalf, and then ping the contract about it
+                           *
+                           * @param _spender The address authorized to spend
+                           * @param _value the max amount they can spend
+                           * @param _extraData some extra information to send to the approved contract
+                           */
+                          function approveAndCall(address _spender, uint256 _value, bytes _extraData)
+                              public
+                              returns (bool success) {
+                              tokenRecipient spender = tokenRecipient(_spender);
+                              if (approve(_spender, _value)) {
+                                  spender.receiveApproval(msg.sender, _value, this, _extraData);
+                                  return true;
+                              }
+                          }
+
+                          /**
+                           * Destroy tokens
+                           *
+                           * Remove `_value` tokens from the system irreversibly
+                           *
+                           * @param _value the amount of money to burn
+                           */
+                          function burn(uint256 _value) public returns (bool success) {
+                              require(balanceOf[msg.sender] >= _value);   // Check if the sender has enough
+                              balanceOf[msg.sender] -= _value;            // Subtract from the sender
+                              totalSupply -= _value;                      // Updates totalSupply
+                              emit Burn(msg.sender, _value);
+                              return true;
+                          }
+
+                          /**
+                           * Destroy tokens from other account
+                           *
+                           * Remove `_value` tokens from the system irreversibly on behalf of `_from`.
+                           *
+                           * @param _from the address of the sender
+                           * @param _value the amount of money to burn
+                           */
+                          function burnFrom(address _from, uint256 _value) public returns (bool success) {
+                              require(balanceOf[_from] >= _value);                // Check if the targeted balance is enough
+                              require(_value <= allowance[_from][msg.sender]);    // Check allowance
+                              balanceOf[_from] -= _value;                         // Subtract from the targeted balance
+                              allowance[_from][msg.sender] -= _value;             // Subtract from the sender's allowance
+                              totalSupply -= _value;                              // Update totalSupply
+                              emit Burn(_from, _value);
+                              return true;
+                          }
+                      }
+
+                  </code>
+                </pre>
+              </div>
+              <br>
+              <div class="raisedbox text-secondary">
+                <p class="lead">In order to run this code, you need to specify:</p>
+                <ul>
+                  <li>The number of tokens you want to create</li>
+                  <li>The name of your tokens</li>
+                  <li>The Symbol of your token - unique identifier</li>
+                </ul>
+                <p class="lead">Then => DEPLOY and you have just created an ERC20 token. Of course at this stage - the creator
+                 of the contract will have the full supply of token assigned to them.If you are creating an ICO, you
+                would want to distribute those tokens:</p>
+                <p class="lead">There are two ways to do this:</p>
+                <ul>
+                  <li>Create a second smart contract to handle the sale, through your ICO website</li>
+                  <li>Ditribute the token through an exchange</li>
+                </ul>
+                <br>
+                <p class="lead">We can assist you with both methods - it is all dependent on the client preferrence, there are
+                 benefits and drawbacks for both options.</p>
+                 <div class="row">
+
+                   <div class="col-md-6">
+                     <div class="linebox text-white">
+                       <p class="lead">Option 1 - Create a distribution SmartContract on your website (like we did here).
+                         It is the simplest approach</p>
+                       <p>Users will need to be able to send Ether, you can incorporate meta-mask and simplify the process.</p>
+                       <p>You can not easily keep track of who actually bought the tokens for KYC purposes, unless if you
+                        implement authentication on your ICO website - which is a time-consuming effort.</p>
+                     </div>
+                   </div>
+
+                   <div class="col-md-6">
+                     <div class="linebox text-white">
+                       <p class="lead">Option 2 - Use an existing exchange to distribute tokens</p>
+                       <p>Users do not need to use Ether, they could trade FIAT for the main trading pair and immediately
+                        get your tokens. Your tokens can continue to be traded for as long as you want.</p>
+                       <p>Exchanges already have KYC implementation, you do not need to manage client data and store
+                        information on your servers.</p>
+                     </div>
+                   </div>
+
+                 </div>
+              </div>
+              </div>
+
+      </div>
+    </div>
+
+
+
+<!-- Footer starts here -->
+  <div id="ico">
+    <div class="container">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-md">
+              <img class="img-fluid" src="./img/tati_block_solutions.png" width="240" height="50">
+              <small class="d-block mb-3 text-muted">&copy; Copyright 2018</small>
+              <a href="https://github.com/tatiblockchain"><img class="align-self-center mr-3" height="40" width="40" src="./img/logo-2582757_640.png"></a>
+              <a href="https://www.facebook.com/tatiBlockchain"><img class="align-self-center mr-3" height="40" width="40" src="./img/facebook-2429746_1280.png"></a>
+              <a href="https://twitter.com/NakamotoZatosh"><img class="align-self-center mr-3" height="40" width="40" src="./img/twitter-117595_1280.png"></a>
+              <a href="https://www.linkedin.com/company/tati-blockchain"><img class="align-self-center mr-3" height="40" width="40" src="./img/linked-in-2668700_1280.png"></a>
+            </div>
+            <div class="col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/consultancy">Consultancy</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/engineering">Engineering</a></li>
+                <li><a class="text-muted" href="https://documentation.tatiblockchain.co.za">Documentation</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/blogs">Blockchain Blogs</a></li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <h5>Support</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/about">About</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/faq">FAQ</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/contact">Leave us a message</a></li>
+                <li><a class="text-muted">Email: info@tatiblockchain.co.za</a></li>
+              </ul>
+            </div>
+            <div class="col-md">
+              <h5>Company</h5>
+              <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/jobs">Careers</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/press">Press</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/privacy">Privacy Statement</a></li>
+                <li><a class="text-muted" href="https://tatiblockchain.co.za/termsandconditions">Terms and Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </div>
+      <!-- Footer ends here -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>

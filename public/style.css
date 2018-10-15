@@ -1,22 +1,4 @@
-<template>
-  <div id="app">
-    <ICOs />
-  </div>
-</template>
-
-<script>
-import ICOs from "./components/ICO.vue";
-
-export default {
-  name: "app",
-  components: {
-    ICOs
-  }
-};
-</script>
-
-<style>
-#app {
+#ico {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -157,4 +139,3 @@ i {
   padding: 5px;
   margin-top: 10px;
 }
-</style>
