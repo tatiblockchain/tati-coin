@@ -196,14 +196,24 @@ export default {
 
           self.message = "";
           self.loading = false;
+          self.tokens = "";
+          self.populateVariables();
           alert("your transaction has been processed succesfully");
         } catch (err) {
           alert(err);
           self.loading = false;
+          self.message = "";
         }
       } else {
         alert("Enter number tokens to buy");
       }
+    },
+    alertDisplay() {
+      this.$swal(
+        "About Smart Contracts",
+        "We are utilising smart contracts on this page, connected to the Rinkeby TEST network. In order to view contract values or interact with ICO, you need to use a smart-browser with meta-mask enabled. You also need to make sure Rinkeby Test Network is selected, the features on this page will not work without meta-mask or ethereum enabled browser like mist.",
+        "OK - Got it"
+      );
     }
   },
   computed: {
@@ -216,6 +226,9 @@ export default {
   },
   created() {
     this.populateVariables();
+  },
+  mounted() {
+    this.alertDisplay();
   }
 };
 </script>
