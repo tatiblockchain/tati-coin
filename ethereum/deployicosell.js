@@ -3,8 +3,8 @@ const Web3 = require("web3");
 const tatiCoinSale = require("./buildico/TatiCoinSale.json");
 
 const provider = new HDWalletProvider(
-  "spirit pear impose chicken fold mail festival slogan affair degree cake master",
-  "https://rinkeby.infura.io/v3/d22795eff7b84261a5e61caa70f9d830"
+  "enter 12 word seed here",
+  "https://rinkeby.infura.io/v3/replace-with-own-key"
 );
 
 const web3 = new Web3(provider);
@@ -28,7 +28,3 @@ const deploy = async () => {
 };
 
 deploy();
-
-//Deployed TatiCoin Contract - 0x345887a8168e819FF1E45795D9b7e982Cd2B77Dc
-
-//Deployed Sell-Contract - 0x4D7547EBE994BF0c3625c210267390E16D9e0827

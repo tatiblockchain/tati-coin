@@ -8,7 +8,7 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
 } else {
   //USer is not runnig metamask OR we are on the server
   const provider = new Web3.providers.HttpProvider(
-    "https://rinkeby.infura.io/v3/d22795eff7b84261a5e61caa70f9d830"
+    "https://rinkeby.infura.io/v3/replace-with-own-key"
   );
 
   web3 = new Web3(provider);
